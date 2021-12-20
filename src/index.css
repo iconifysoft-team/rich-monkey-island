@@ -2,15 +2,38 @@
 @font-face {
     font-family: 'Streetwear';
     src: url('./assets/fonts/Streetwear.otf');
-    font-family: 'cursive';
 }
+@font-face {
+    font-family: 'techmono';
+    src: url('./assets/fonts/ShareTechMono-Regular.ttf');
+    }
+@font-face {
+    font-family: 'backblack';
+    src: url('./assets/fonts/Back\ to\ Black\ Bold\ Demo.ttf');
+}
+@font-face {
+    font-family: 'arabella';
+    src: url('./assets/fonts/Arabella.ttf');
+}
+@font-face {
+    font-family: 'greatvives';
+    src: url('./assets/fonts/GreatVibes-Regular.ttf');
+}
+@font-face {
+    font-family: 'precious';
+    src: url('./assets/fonts/Precious.ttf');
+}
+@font-face {
+    font-family: 'blackine';
+    src: url('./assets/fonts/Blackine.otf');
+}
+
 body {
     margin: 0;
-    font-family: 'Inter', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: 'blackine';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #303030;
+    background-color: #000000;
     color: #ffffff;
 
 font-family: 'Streetwear' !important;
@@ -46,7 +69,7 @@ nav {
 .welcome {
     font-size: 20;
 
-font-family: 'cursive' !important;
+font-family: 'greatvives';
 font-weight: bold;
 padding-top: 100;
 vertical-align:bottom;
@@ -75,3 +98,265 @@ nav > div > button {
     left: 0;
     width: 100%;
 }
+.roadmap-style {
+    font-family: 'blackine';
+    font-size: 28px;
+    height: auto;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+.roadmap-title {
+    color: #b48608;
+    font-family: 'blackine';
+    text-align: center;
+    font-weight: bold;
+}
+.roadmap-list {
+    margin-left: 40px;
+    padding: 20px;
+}
+
+/* TEAM */
+
+.team-style {
+    font-family: 'blackine';
+    font-size: 28px;
+    height: auto;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+.team-title {
+    color: #b48608;
+    font-family: 'blackine';
+    text-align: center;
+    font-weight: bold;
+} 
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c5db9;
+  }
+
+  .profile-card{
+    position: relative;
+    font-family: sans-serif;
+    width: 220px;
+    height: 260px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+    margin: 0 25px;
+  }
+  .profile-card .img {
+      width: 100px;
+      height: 150px;
+      border-radius: 40%;
+  }
+.profile-card:hover .img{
+    transform: translateY(-60px);
+    border-radius: 200px;
+  }
+
+  .profile-card:hover img{
+    border-radius: 10px;
+  }
+.caption{
+    text-align: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: .6s;
+  }
+  .profile-card:hover .caption{
+    opacity: 1;
+    
+  }
+  .caption h3{
+    font-size: 21px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #b48608;
+  }
+  .caption p{
+    font-size: 15px;
+    color: #0c52a1;
+    font-family: sans-serif;
+    margin: 2px 0 9px 0;
+    margin-top: -5px;
+  }
+.caption .social-links a{
+    color: #333;
+    margin-right: 15px;
+    font-size: 21px;
+    transition: .6s;
+  }
+  .social-links a:hover{
+    color: #0c52a1;
+  }
+
+/**/
+
+.line { border-top: 1px solid rgb(233, 182, 17);align-items: center; display: block; margin-top: 20px; padding-top: 10px; position: relative; }
+.line-text { background-color: #b48608; color: #fff;text-align: center; }
+
+* {
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .iframely-embed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background: white;
+  }
+  
+  #app {
+   
+    z-index: 100;
+  
+   
+  }
+  
+  #app {
+      font-family: 'blackine';
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding-bottom: 4vmin;
+    height: 500px;
+    width: 100%;
+    color: #c7c7c7;
+  }
+  
+  
+  
+  @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+  
+  .title {
+    padding-left: 1em;
+    grid-column: 1 / -1;
+    grid-row: 1;
+  
+    font-family: "backblack";
+    font-size: 42px;
+    width: 100%;
+    z-index: 2;
+  
+  
+  }
+  
+  @keyframes text-clip {
+    from {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  
+  @keyframes outer-left {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: none;
+    }
+  }
+  
+  @keyframes inner-left {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: none;
+    }
+  }
+  
+  .cafe,
+  .mozart {
+    animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+    
+  }
+  
+  
+  
+  .title-inner {
+    display: inline-block;
+    animation: inner-left 1s 1s ease both;
+  }
+  
+  .cafe-inner {
+    display: inline-block;
+    animation: inner-left 1s 1s ease both,
+      text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  }
+  
+  .mozart-inner {
+    animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  }
+  
+  .title {
+    animation: outer-left 1s 1s ease both;
+  }
+  
+  
+  .mozart {
+    display: inline-block;
+  }
+  
+  .image {
+    grid-row: 1;
+    grid-column: 2;
+    margin-left: 4rem;
+    opacity: 0.8;
+    color: #b48608;
+    font-size: 22px;
+    padding-top: 30px;
+    font-family: 'Streetwear';
+  
+    animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+  
+    @keyframes image-in {
+      from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      }
+      to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+  
+    
+  }
+  
+  /* title shine */
+  .title-shine {
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  }
+@keyframes shine {
+    from {
+    background-position: 0
+    }
+    to{
+    background-position: 180px
+    }
+}
+
+/**/
