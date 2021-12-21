@@ -39,7 +39,7 @@ body {
 font-family: 'Streetwear' !important;
 }
 .wallet-btn {
-font-family: 'cursive' !important;
+font-family:'blackine' !important;
 background-color:#e79c10;
 height: 35px;
 text-align: center;
@@ -224,7 +224,9 @@ nav > div > button {
   
    
   }
-  
+  .toggle-btn {
+      background-color: darkgrey;
+  }
   #app {
       font-family: 'blackine';
     display: grid;
@@ -232,7 +234,6 @@ nav > div > button {
     align-items: center;
     padding-bottom: 4vmin;
     height: 500px;
-    width: 100%;
     color: #c7c7c7;
   }
   
@@ -247,7 +248,7 @@ nav > div > button {
   
     font-family: "backblack";
     font-size: 42px;
-    width: 100%;
+    
     z-index: 2;
   
   
@@ -283,7 +284,9 @@ nav > div > button {
   .cafe,
   .mozart {
     animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
-    
+    font-size: 46px;
+    text-align: center;
+    padding-top: 30px;
   }
   
   
@@ -295,6 +298,7 @@ nav > div > button {
   
   .cafe-inner {
     display: inline-block;
+    width: auto;
     animation: inner-left 1s 1s ease both,
       text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
   }
@@ -312,13 +316,52 @@ nav > div > button {
     display: inline-block;
   }
   
+.welcome-title {
+    font-size: 10vw;
+    color: #fff;
+    margin-top: 80px;
+}
+.book-open {
+    background-image: url('./assets/imgs/book.jpeg');
+    background-repeat: no-repeat;
+    background-size:100% auto;
+    width:100vw;
+    height: 65vw;
+  font-size: 2.5vw;
+  color:#a66a2e;
+    
+}
+.page-one {
+    margin-top: 40px;
+    margin-left: 10px;
+    padding: 40px;
+}
+.top-space {
+    padding: 10px;
+}
+.page-title {   
+    align-items: center;
+    font-size: 2vw;
+    font-family: 'Streetwear';
+}
+.text-orange {
+    color: #b48608;
+    font-family: 'techmono';
+    font-size:28px;
+}
+.chapter-text {
+    padding: 30px;
+    font-size: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
   .image {
     grid-row: 1;
     grid-column: 2;
     margin-left: 4rem;
     opacity: 0.8;
     color: #b48608;
-    font-size: 22px;
+    font-size: 2vw;
     padding-top: 30px;
     font-family: 'Streetwear';
   
@@ -344,11 +387,12 @@ nav > div > button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 3s infinite linear;
-  animation-fill-mode: forwards;
-  -webkit-text-size-adjust: none;
+  animation-fill-mode:both;
+  -webkit-text-size-adjust:auto;
   font-weight: 600;
+  width: auto;
   text-decoration: none;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
   }
 @keyframes shine {
     from {
