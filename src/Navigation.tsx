@@ -8,6 +8,10 @@ import monkey02 from './assets/imgs/monkey02.jpeg';
 import monkey03 from './assets/imgs/monkey03.jpeg';
 import monkey04 from './assets/imgs/monkey04.jpeg';
 
+import road01 from './assets/imgs/monkey-01.jpeg';
+import road02 from './assets/imgs/monkey-02.jpeg';
+import road03 from './assets/imgs/monkey-03.jpeg';
+
 import  Navbar  from 'react-bootstrap/Navbar';
 import Footer from './footer';
 import { BsTwitter, BsFacebook, BsDiscord } from "react-icons/bs";
@@ -159,6 +163,8 @@ export const Navigation: FC = () => {
   <a id="roadmap">
   <h2 className='roadmap-title'>ROADMAP</h2>
   <hr></hr>
+  <Row>
+    <Col>
   <ul className="timeline">
     <li className="event" data-date="1">
       <p>Minting 7.5k Rich Monkey NFTs in the public sale 0.65 each.</p>
@@ -173,6 +179,13 @@ export const Navigation: FC = () => {
       <p>Minting 15k Rich Monkey Kid NFTs by using the voodoo potion NFTs.</p>    
     </li>
   </ul>
+  </Col>
+  <Col>
+  <img src={road03} className="roadmap-image"/>
+  <img src={road02} className="roadmap-image"/>
+  <img src={road01} className="roadmap-image"/>
+  </Col>
+  </Row>
 <h3 className='line line-text'>Following the activation of the Road Map, a new roadmap for the Magical Island will begin. </h3>
  
   </a>
