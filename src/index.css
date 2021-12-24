@@ -7,6 +7,16 @@
     font-family: 'techmono';
     src: url('./assets/fonts/ShareTechMono-Regular.ttf');
     }
+
+@font-face {
+  font-family: 'cartoon';
+  src: url('./assets/fonts/SFCartoonistHand.ttf');
+  }
+
+@font-face {
+  font-family: 'moslymono';
+  src: url('./assets/fonts/MostlyMono.ttf');
+  }
 @font-face {
     font-family: 'backblack';
     src: url('./assets/fonts/Back\ to\ Black\ Bold\ Demo.ttf');
@@ -39,8 +49,8 @@ body {
 font-family: 'Streetwear' !important;
 }
 .wallet-btn {
-font-family:'techmono' !important;
-font-size: 18px;
+font-family:'cartoon' !important;
+font-size: 22px;
 background-color:#e79c10;
 height: 35px;
 text-align: center;
@@ -60,8 +70,13 @@ nav {
 }
 
 .items-menu {
-    font-size: 24px;
-    font-family: 'techmono';
+    font-size: 28px;
+    font-family: 'cartoon';
+    font-weight: bold;
+    color:orangered;
+}
+.items-menu a {
+  color: orangered;
 }
 .panel-center {
     height: auto;
@@ -91,17 +106,37 @@ nav > div > button {
 }
 
 .footer {
+  padding-top: 30px;
     margin-top: 1rem;
-    padding: 1rem;
-    background-color: #e79c10;
-    position:sticky ;
+    
+    background-color:#2c2d30;
     z-index: 1;
     bottom: 0;
     left: 0;
-    width: 100%;
+    font-family: 'cartoon';
+   text-align: center;
+}
+.copy {
+  width: 800px;
+  
+}
+.footer-row {
+  
+  width: 30%;
+  float: none;
+  margin:0 auto;
+  text-align: center;
+  align-content: center;
+}
+.footer-copy {
+  width: 800px;
+  float: none;
+  margin:0 auto;
+  text-align: center;
+  align-content: center;
 }
 .roadmap-style {
-    font-family: 'blackine';
+    font-family: 'cartoon';
     font-size: 28px;
     height: auto;
     margin-top: 30px;
@@ -172,7 +207,7 @@ nav > div > button {
     border-radius: 10px;
   }
 .caption{
-    text-align: center;
+    text-align: justify;
     transform: translateY(-50px);
     opacity: 0;
     transition: .6s;
@@ -188,11 +223,15 @@ nav > div > button {
     color: #b48608;
   }
   .caption p{
-    font-size: 15px;
-    color: #0c52a1;
-    font-family: sans-serif;
+    font-size: 13px;
+    color:orangered;
+    font-family: 'cartoon';
     margin: 2px 0 9px 0;
+    font-weight: bold;
     margin-top: -5px;
+  }
+  .caption b {
+    font-size: 14px;
   }
 .caption .social-links a{
     color: #333;
@@ -207,7 +246,7 @@ nav > div > button {
 /**/
 
 .line { border-top: 1px solid rgb(233, 182, 17);align-items: center; display: block; margin-top: 20px; padding-top: 10px; position: relative; }
-.line-text {font-family: 'techmono'; background-color: #b48608; color: #fff;text-align: center; font-size: 25px;}
+.line-text {font-family: 'cartoon'; background-color: #b48608; color: #fff;text-align: center; font-size: 32px;}
 
 * {
     position: relative;
@@ -332,7 +371,8 @@ nav > div > button {
     background-repeat: no-repeat;
     background-size:100% auto;
     width:85vw;
-    height: 65vw;
+    height: 85vw;
+    margin-bottom: -60px;
   font-size: 2.5vw;
   color:#a66a2e;
     
@@ -352,8 +392,8 @@ nav > div > button {
 }
 .text-orange {
     color: #b48608;
-    font-family: 'techmono';
-    font-size:28px;
+    font-family: 'cartoon';
+    font-size:32px;
 }
 .chapter-text {
     padding: 30px;
@@ -418,7 +458,7 @@ nav > div > button {
     border-top-right-radius: 4px;
     background: rgba(255, 255, 255, 0.03);
     color: rgba(255, 255, 255, 0.8);
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'cartoon';
     margin: 50px auto;
     letter-spacing: 0.5px;
     position: relative;

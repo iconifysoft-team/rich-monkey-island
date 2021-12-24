@@ -8,13 +8,20 @@ import monkey02 from './assets/imgs/monkey02.jpeg';
 import monkey03 from './assets/imgs/monkey03.jpeg';
 import monkey04 from './assets/imgs/monkey04.jpeg';
 
+import monkey05 from './assets/imgs/monkey05.jpeg';
+import monkey06 from './assets/imgs/monkey06.jpeg';
+import monkey07 from './assets/imgs/monkey07.jpeg';
+import monkey08 from './assets/imgs/monkey08.jpeg';
+import monkey10 from './assets/imgs/monkey10.jpeg';
+
 import road01 from './assets/imgs/monkey-01.jpeg';
 import road02 from './assets/imgs/monkey-02.jpeg';
 import road03 from './assets/imgs/monkey-03.jpeg';
+import road04 from './assets/imgs/monkey-04.jpeg';
 
 import  Navbar  from 'react-bootstrap/Navbar';
 import Footer from './footer';
-import { BsTwitter, BsFacebook, BsDiscord } from "react-icons/bs";
+import { BsTwitter, BsFacebook, BsDiscord, BsInstagram } from "react-icons/bs";
 import team from './assets/imgs/team.webp';
 import profile01 from './assets/imgs/profile01.jpeg';
 import profile02 from './assets/imgs/profile02.jpeg';
@@ -53,13 +60,13 @@ export const Navigation: FC = () => {
            </Offcanvas.Header>
            <Offcanvas.Body className="bg-dark">
              <Nav className="text-center mt-4 mb-4 items-menu">
-               <Nav.Link href="#action1">Home</Nav.Link>
-               <Nav.Link href="#action2">Buy Rich Monkey</Nav.Link>
-               <Nav.Link href="#action2">Rarity</Nav.Link>
+               <Nav.Link href="#">Home</Nav.Link>
+               <Nav.Link href="#roadmap">Buy Rich Monkey</Nav.Link>
+               <Nav.Link href="#">Rarity (soon)</Nav.Link>
                <Nav.Link href="#roadmap">Roadmap</Nav.Link>
                <Nav.Link href="#team">Team</Nav.Link>
-               <Nav.Link href="#action2">Provenance</Nav.Link>
-               <Nav.Link href="#members">Members Only</Nav.Link>
+               <Nav.Link href="#">Provenance (soon)</Nav.Link>
+               <Nav.Link href="#">Members Only (soon)</Nav.Link>
               {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                  <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
@@ -106,7 +113,7 @@ export const Navigation: FC = () => {
      <Carousel.Item>
        <img
          className="d-block w-100"
-         src={monkey01}
+         src={monkey05}
          alt="First slide"
        />
        <Carousel.Caption>
@@ -117,7 +124,7 @@ export const Navigation: FC = () => {
      <Carousel.Item>
        <img
          className="d-block w-100"
-         src={monkey02}
+         src={monkey06}
          alt="Second slide"
        />
    
@@ -129,7 +136,7 @@ export const Navigation: FC = () => {
      <Carousel.Item>
        <img
          className="d-block w-100"
-         src={monkey03}
+         src={monkey07}
          alt="Third slide"
        />
    
@@ -141,7 +148,19 @@ export const Navigation: FC = () => {
       <Carousel.Item>
        <img
          className="d-block w-100"
-         src={monkey04}
+         src={monkey08}
+         alt="Third slide"
+       />
+   
+       <Carousel.Caption>
+         {/* <h3>Third slide label</h3>
+         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
+       </Carousel.Caption>
+     </Carousel.Item>
+     <Carousel.Item>
+       <img
+         className="d-block w-100"
+         src={monkey10}
          alt="Third slide"
        />
    
@@ -152,8 +171,25 @@ export const Navigation: FC = () => {
      </Carousel.Item>
    </Carousel>
    <section className="roadmap-style">
+     <a id="ownership">
+       <h2 className='roadmap-title'>OWNERSHIP</h2>
+       <hr></hr>
+       <ul className="list-text">
+    <li className="event" data-date="1">
+      <p>Ownership of the NFT is mediated entirely by the Smart Contract and the Solana Network .</p>
+    </li>
+    <li className="event" data-date="2">
+      <p>At no point we can freeze, or modify the ownership of any Rich Monkey NFT .</p>    
+    </li>
+    <li className="event" data-date="3">
+      <p>Once you purchase an original Rich Monkey NFT you will have a worldwide, free license to use your NFT/s along with ownership and commercial usage rights given to the owners over their NFTs</p>    
+    </li>
+  </ul>
+     </a>
+   </section>
+   <section className="roadmap-style">
    <a id="history">
-  <h2 className='roadmap-title'>HISTORY</h2>
+  <h2 className='roadmap-title'>STORY</h2>
   <hr></hr>
     <div className="container book-open">
     </div> 
@@ -184,6 +220,7 @@ export const Navigation: FC = () => {
   <img src={road03} className="roadmap-image"/>
   <img src={road02} className="roadmap-image"/>
   <img src={road01} className="roadmap-image"/>
+  <img src={road04} className="roadmap-image"/>
   </Col>
   </Row>
 <h3 className='line line-text'>Following the activation of the Road Map, a new roadmap for the Magical Island will begin. </h3>
@@ -201,13 +238,13 @@ export const Navigation: FC = () => {
       <img src={profile01} width="140px" height="145px" />
    </div>
    <div className="caption">
-     <h3>Richard Cyber</h3>
-     <p>Blockchain Developer</p>
-    <div className="social-links">
+     <h3>The Founder</h3>
+     <p><b>Nosir JR</b> // a squeamish doctor, traveller, art collector, 11 years management, and the most important thing a fatherr</p>
+   {/* <div className="social-links">
       <a href="#"><i><BsTwitter /></i></a>
       <a href="#"><i><BsFacebook /></i></a>
       <a href="#"><i><BsDiscord /></i></a>
-    </div>
+        </div> */}
   </div>
 </div>
   </div>
@@ -217,13 +254,9 @@ export const Navigation: FC = () => {
       <img src={profile02} width="140px" height="145px" />
    </div>
    <div className="caption">
-     <h3>Richard Cyber</h3>
-     <p>Blockchain Developer</p>
-    <div className="social-links">
-      <a href="#"><i><BsTwitter /></i></a>
-      <a href="#"><i><BsFacebook /></i></a>
-      <a href="#"><i><BsDiscord /></i></a>
-    </div>
+     <h3>Blockchain Developer</h3>
+     <p><b>Richard Cibernetic</b> // a blockchain developer, full-stack developer with 15 years web developing experience</p>
+   
   </div>
 </div>
   </div>
@@ -233,13 +266,13 @@ export const Navigation: FC = () => {
       <img src={profile03} width="140px" height="145px" />
    </div>
    <div className="caption">
-     <h3>Richard Cyber</h3>
-     <p>Blockchain Developer</p>
-    <div className="social-links">
+     <h3>Digital Artist</h3>
+     <p><b>TK Muhamed </b>// one in a million digital artist with 10 years experience and art running in his blood and genetics .</p>
+   {/* <div className="social-links">
       <a href="#"><i><BsTwitter /></i></a>
       <a href="#"><i><BsFacebook /></i></a>
       <a href="#"><i><BsDiscord /></i></a>
-    </div>
+        </div> */}
   </div>
 </div>
   </div>
@@ -249,13 +282,13 @@ export const Navigation: FC = () => {
       <img src={profile04} width="140px" height="145px" />
    </div>
    <div className="caption">
-     <h3>Richard Cyber</h3>
-     <p>Blockchain Developer</p>
-    <div className="social-links">
+     <h3>Marketing Manager</h3>
+     <p><b>M. Yusuf Tığlı </b>// the caucasian price is his nick name physics specialist originally with great experience in games marketing.</p>
+ {/*   <div className="social-links">
       <a href="#"><i><BsTwitter /></i></a>
       <a href="#"><i><BsFacebook /></i></a>
       <a href="#"><i><BsDiscord /></i></a>
-    </div>
+      </div> */}
   </div>
 </div>
   </div>
@@ -267,11 +300,11 @@ export const Navigation: FC = () => {
    <div className="caption">
      <h3>Richard Cyber</h3>
      <p>Blockchain Developer</p>
-    <div className="social-links">
-      <a href="#"><i><BsTwitter /></i></a>
-      <a href="#"><i><BsFacebook /></i></a>
-      <a href="#"><i><BsDiscord /></i></a>
-    </div>
+    {/*<div className="social-links">
+      <a href="https://twitter.com/richmonkeisland"><i><BsTwitter /></i></a>
+      <a href="https://discord.gg/DxQSMfm6F3"><i><BsDiscord /></i></a>
+      <a href="https://www.instagram.com/richmonkeyisland/"><i><BsInstagram /></i></a>
+    </div> */}
   </div>
 </div>
   </div>
