@@ -6,10 +6,19 @@ import logo from './assets/imgs/logo.png';
 import monkey01 from './assets/imgs/monkey01.jpeg';
 import monkey02 from './assets/imgs/monkey02.jpeg';
 import monkey03 from './assets/imgs/monkey03.jpeg';
+import monkey04 from './assets/imgs/monkey04.jpeg';
+
 import  Navbar  from 'react-bootstrap/Navbar';
 import Footer from './footer';
 import { BsTwitter, BsFacebook, BsDiscord } from "react-icons/bs";
 import team from './assets/imgs/team.webp';
+import profile01 from './assets/imgs/profile01.jpeg';
+import profile02 from './assets/imgs/profile02.jpeg';
+import profile03 from './assets/imgs/profile03.jpeg';
+import profile04 from './assets/imgs/profile04.jpeg';
+import profile05 from './assets/imgs/profile05.jpeg';
+
+
 
 export const Navigation: FC = () => {
     const { wallet } = useWallet();
@@ -125,65 +134,45 @@ export const Navigation: FC = () => {
          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
        </Carousel.Caption>
      </Carousel.Item>
+      <Carousel.Item>
+       <img
+         className="d-block w-100"
+         src={monkey04}
+         alt="Third slide"
+       />
+   
+       <Carousel.Caption>
+         {/* <h3>Third slide label</h3>
+         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
+       </Carousel.Caption>
+     </Carousel.Item>
    </Carousel>
-<section className='roadmap-style'>
-  <a id="roadmap">
-    <h2 className='roadmap-title'>HISTORY</h2>
-    <hr></hr>
+   <section className="roadmap-style">
+   <a id="history">
+  <h2 className='roadmap-title'>HISTORY</h2>
+  <hr></hr>
     <div className="container book-open">
-  <div className="row">
-    <div className="col">
-      <div className='page-one'>
-    <b className='page-title'>STORY<br></br> OF<br></br> THE RICH MONKEY ISLAND</b>
- <p className="top-space">
- In the far future,
- the pollution of the earth has led humans to invade further habitats. 
- Every single species is forcefully displaced. 
- Rich Monkeys are separated from their families.
- They are sent to different restricted areas.
- </p>
- </div>
-    </div>
-    <div className="col chapter-text">
-    <b>Chapter 1</b> - End of Rich Monkey seizure.
-
-Every Rich Monkey needs your help to be free and reunite his family.
-
-Male Rich Monkey NFT Mint / 7,500 Available Unique NFT's
- <br></br>
-<b>Chapter 2</b> - We must find them !!
-There are 7,500 Rich Monkey Wives to be released .
-
-The rich monkey will use the power of a magical potion called "voodoo potion " to bring back his lost love .
-
-There are only 3000 voodoo potion Nfts that will ever exist for free minting, less than 50 % of the Rich Monkey holders will be able to have the free 1:1 mint for the voodoo potion NFTs and use them to free their wives .
-** After having your voodoo potion + rich monkey NFT in your wallet you can mint one rich monkey wife NFT in exchange for one voodoo potion NFT .
-*The voodoo potion that will be obtained in exchange 
-With the wife NFT will be listed by auction at zero sol for 24 hours so that the community can determine the fair price for each voodoo potion NFT and use it again to obtain the remaining rich monkey wife NFTs .
-
-<br></br>
-<b>Chapter 3</b> - Rich monkey Kids! 
-
-There are 15,000 kids NFTs. The rich monkey or his wife will use the power of the magical voodoo potion to bring back their kids.
-
- Only "Rich Monkey or Rich Monkey wife" holders will be able to mint the rich monkey kid .
-  
-After the family is united they will be eligible to travel to the Rich Monkey Island where unlimited adventures, treasures & fun is reserved.
-    </div>
-    </div>
-    </div>
-  </a>
+    </div> 
+    </a>
 </section>
   <section className='roadmap-style'>
   <a id="roadmap">
   <h2 className='roadmap-title'>ROADMAP</h2>
   <hr></hr>
-  <ol className='roadmap-list'>
-  <li>Minting 7.5k Rich Monkey NFTs in the public sale 0.65 each .</li>
-  <li>Free Minting 3000 vodoo potion NFTS for Rich monkey NFTs holders.</li>
-  <li>Minting 7.5k Rich Monkey Wife NFTs by using the voodoo potion NFTs.</li>
-  <li>Minting 15k Rich Monkey Kid NFTs by using the voodoo potion NFTs.</li>
-</ol>
+  <ul className="timeline">
+    <li className="event" data-date="1">
+      <p>Minting 7.5k Rich Monkey NFTs in the public sale 0.65 each.</p>
+    </li>
+    <li className="event" data-date="2">
+      <p>Free Minting 3000 vodoo potion NFTS for Rich monkey NFTs holders.</p>    
+    </li>
+    <li className="event" data-date="3">
+      <p>Minting 7.5k Rich Monkey Wife NFTs by using the voodoo potion NFTs.</p>    
+    </li>
+    <li className="event" data-date="4">
+      <p>Minting 15k Rich Monkey Kid NFTs by using the voodoo potion NFTs.</p>    
+    </li>
+  </ul>
 <h3 className='line line-text'>Following the activation of the Road Map, a new roadmap for the Magical Island will begin. </h3>
  
   </a>
@@ -196,7 +185,7 @@ After the family is united they will be eligible to travel to the Rich Monkey Is
   <div className='col'>
   <div className="profile-card">
    <div className="img">
-      <img src={team} width="160px" height="155px" />
+      <img src={profile01} width="140px" height="145px" />
    </div>
    <div className="caption">
      <h3>Richard Cyber</h3>
@@ -212,7 +201,7 @@ After the family is united they will be eligible to travel to the Rich Monkey Is
   <div className='col'>
   <div className="profile-card">
    <div className="img">
-      <img src={team} width="160px" height="155px" />
+      <img src={profile02} width="140px" height="145px" />
    </div>
    <div className="caption">
      <h3>Richard Cyber</h3>
@@ -228,7 +217,7 @@ After the family is united they will be eligible to travel to the Rich Monkey Is
   <div className='col'>
   <div className="profile-card">
    <div className="img">
-      <img src={team} width="160px" height="155px" />
+      <img src={profile03} width="140px" height="145px" />
    </div>
    <div className="caption">
      <h3>Richard Cyber</h3>
@@ -244,7 +233,23 @@ After the family is united they will be eligible to travel to the Rich Monkey Is
   <div className='col'>
   <div className="profile-card">
    <div className="img">
-      <img src={team} width="160px" height="155px" />
+      <img src={profile04} width="140px" height="145px" />
+   </div>
+   <div className="caption">
+     <h3>Richard Cyber</h3>
+     <p>Blockchain Developer</p>
+    <div className="social-links">
+      <a href="#"><i><BsTwitter /></i></a>
+      <a href="#"><i><BsFacebook /></i></a>
+      <a href="#"><i><BsDiscord /></i></a>
+    </div>
+  </div>
+</div>
+  </div>
+  <div className='col'>
+  <div className="profile-card">
+   <div className="img">
+      <img src={profile05} width="140px" height="145px" />
    </div>
    <div className="caption">
      <h3>Richard Cyber</h3>
