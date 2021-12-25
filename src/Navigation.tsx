@@ -60,12 +60,12 @@ export const Navigation: FC = () => {
            </Offcanvas.Header>
            <Offcanvas.Body className="bg-dark">
              <Nav className="text-center mt-4 mb-4 items-menu">
-               <Nav.Link href="#home">Home</Nav.Link>
-               <Nav.Link href="#roadmap">Buy Rich Monkey</Nav.Link>
+               <Nav.Link href="https://richmonkeyisland.com#home">Home</Nav.Link>
+               <Nav.Link href="https://richmonkeyisland.com#roadmap">Buy Rich Monkey</Nav.Link>
                <Nav.Link href="#">Rarity (soon)</Nav.Link>
-               <Nav.Link href="#roadmap">Roadmap</Nav.Link>
-               <Nav.Link href="#discord">United are us</Nav.Link>
-               <Nav.Link href="#team">Team</Nav.Link>
+               <Nav.Link href="https://richmonkeyisland.com#roadmap">Roadmap</Nav.Link>
+               <Nav.Link href="https://richmonkeyisland.com#discord">United are us</Nav.Link>
+               <Nav.Link href="https://richmonkeyisland.com#team">Team</Nav.Link>
                <Nav.Link href="#">Provenance (soon)</Nav.Link>
                <Nav.Link href="#">Members Only (soon)</Nav.Link>
               {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
@@ -91,7 +91,7 @@ export const Navigation: FC = () => {
        </Container>
      </Navbar>
      <Container fluid>
-       <a id="home"></a>
+       <div id="home"></div>
 	          	<section className='precious'>
               <div className="cafe">
                 <p></p>
@@ -173,7 +173,7 @@ export const Navigation: FC = () => {
      </Carousel.Item>
    </Carousel>
    <section className="roadmap-style">
-     <a id="ownership">
+     <div id="ownership">
        <h2 className='roadmap-title'>OWNERSHIP</h2>
        <hr></hr>
        <ul className="list-text">
@@ -187,7 +187,7 @@ export const Navigation: FC = () => {
       <p>Once you purchase an original Rich Monkey NFT you will have a worldwide, free license to use your NFT/s along with ownership and commercial usage rights given to the owners over their NFTs</p>    
     </li>
   </ul>
-     </a>
+     </div>
    </section>
    <section className="roadmap-style">
    <a id="history">
@@ -198,7 +198,7 @@ export const Navigation: FC = () => {
     </a>
 </section>
 <section className="roadmap-style">
-  <a id="discord">
+  <div id="discord">
   <h2 className='roadmap-title'>UNITED ARE US</h2>
   <hr></hr>
   <div className="text-center">
@@ -209,10 +209,10 @@ export const Navigation: FC = () => {
 Join our discord for latest news & get on the whitelist .
 </a>
 </div>
-  </a>
+  </div>
 </section>
   <section className='roadmap-style'>
-  <a id="roadmap">
+  <div id="roadmap">
   <h2 className='roadmap-title'>ROADMAP</h2>
   <hr></hr>
   <Row>
@@ -233,18 +233,18 @@ Join our discord for latest news & get on the whitelist .
   </ul>
   </Col>
   <Col>
+  <img src={road04} className="roadmap-image"/>
   <img src={road03} className="roadmap-image"/>
   <img src={road02} className="roadmap-image"/>
   <img src={road01} className="roadmap-image"/>
-  <img src={road04} className="roadmap-image"/>
   </Col>
   </Row>
 <h3 className='line line-text'>Following the activation of the Road Map, a new roadmap for the Magical Island will begin. </h3>
  
-  </a>
+  </div>
   </section>
   <section className="team-style">
-    <a id="team">
+    <div id="team">
     <h2 className='team-title'>TEAM</h2>
   <hr></hr>
 <div className="row">
@@ -326,7 +326,7 @@ Join our discord for latest news & get on the whitelist .
   </div>
 </div>
 
-    </a>
+    </div>
   </section>
   
    <Footer /> 
