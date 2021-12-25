@@ -233,6 +233,10 @@ nav > div > button {
   .caption b {
     font-size: 14px;
   }
+  .text-center {
+    text-align: center;
+    margin: 0 auto;
+  }
 .caption .social-links a{
     color: #333;
     margin-right: 15px;

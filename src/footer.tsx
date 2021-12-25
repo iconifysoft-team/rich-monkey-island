@@ -26,19 +26,10 @@ const Footer = () => (
       <a href="https://www.instagram.com/richmonkeyisland/"><i><BsInstagram /></i></a>
    </p>
   
-     <div className="">
-     <Row >
-    <Col >
-      &nbsp;
-    </Col>
-    <Col >
-    COPY 2021 RIGHTS : R.KARMA.
-    </Col>
-    <Col>
-    copyright registration for the artwork, IPR issues .<br></br>
-    legal documents, disclaimer, terms of use .<br></br>
-    </Col>
-  </Row>
+     <div className="text-center">
+    
+    COPY &copy;2021 all rights reserved.
+
   </div>
   
     </div>

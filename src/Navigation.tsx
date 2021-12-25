@@ -60,10 +60,11 @@ export const Navigation: FC = () => {
            </Offcanvas.Header>
            <Offcanvas.Body className="bg-dark">
              <Nav className="text-center mt-4 mb-4 items-menu">
-               <Nav.Link href="#">Home</Nav.Link>
+               <Nav.Link href="#home">Home</Nav.Link>
                <Nav.Link href="#roadmap">Buy Rich Monkey</Nav.Link>
                <Nav.Link href="#">Rarity (soon)</Nav.Link>
                <Nav.Link href="#roadmap">Roadmap</Nav.Link>
+               <Nav.Link href="#discord">United are us</Nav.Link>
                <Nav.Link href="#team">Team</Nav.Link>
                <Nav.Link href="#">Provenance (soon)</Nav.Link>
                <Nav.Link href="#">Members Only (soon)</Nav.Link>
@@ -90,6 +91,7 @@ export const Navigation: FC = () => {
        </Container>
      </Navbar>
      <Container fluid>
+       <a id="home"></a>
 	          	<section className='precious'>
               <div className="cafe">
                 <p></p>
@@ -195,6 +197,20 @@ export const Navigation: FC = () => {
     </div> 
     </a>
 </section>
+<section className="roadmap-style">
+  <a id="discord">
+  <h2 className='roadmap-title'>UNITED ARE US</h2>
+  <hr></hr>
+  <div className="text-center">
+  We are stronger when we are united!
+  Join now and reserve your seat for a solid project!
+  <br></br>
+  <a href="https://discord.gg/DxQSMfm6F3">
+Join our discord for latest news & get on the whitelist .
+</a>
+</div>
+  </a>
+</section>
   <section className='roadmap-style'>
   <a id="roadmap">
   <h2 className='roadmap-title'>ROADMAP</h2>
@@ -203,10 +219,10 @@ export const Navigation: FC = () => {
     <Col>
   <ul className="timeline">
     <li className="event" data-date="1">
-      <p>Minting 7.5k Rich Monkey NFTs in the public sale 0.65 each.</p>
+      <p>Minting 7.5k Rich Monkey NFTs in the public sale 0.65 SOL.</p>
     </li>
     <li className="event" data-date="2">
-      <p>Free Minting 3000 vodoo potion NFTS for Rich monkey NFTs holders.</p>    
+      <p>Free Minting 3000 vodoo potion NFTS for Rich monkey NFTs holders according to the whitelist.</p>    
     </li>
     <li className="event" data-date="3">
       <p>Minting 7.5k Rich Monkey Wife NFTs by using the voodoo potion NFTs.</p>    
@@ -298,8 +314,8 @@ export const Navigation: FC = () => {
       <img src={profile05} width="140px" height="145px" />
    </div>
    <div className="caption">
-     <h3>Richard Cyber</h3>
-     <p>Blockchain Developer</p>
+     <h3>COPY RIGHTS</h3>
+     <p><b>R.KARMA</b>// copyright registration for the artwork, IPR issues,legal documents, disclaimer, terms of use. </p>
     {/*<div className="social-links">
       <a href="https://twitter.com/richmonkeisland"><i><BsTwitter /></i></a>
       <a href="https://discord.gg/DxQSMfm6F3"><i><BsDiscord /></i></a>
