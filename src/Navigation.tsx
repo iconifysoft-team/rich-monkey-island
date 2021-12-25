@@ -60,12 +60,12 @@ export const Navigation: FC = () => {
            </Offcanvas.Header>
            <Offcanvas.Body className="bg-dark">
              <Nav className="text-center mt-4 mb-4 items-menu">
-               <Nav.Link href="https://richmonkeyisland.com#home">Home</Nav.Link>
-               <Nav.Link href="https://richmonkeyisland.com#roadmap">Buy Rich Monkey</Nav.Link>
+               <Nav.Link href="#home">Home</Nav.Link>
+               <Nav.Link href="#roadmap">Buy Rich Monkey</Nav.Link>
                <Nav.Link href="#">Rarity (soon)</Nav.Link>
-               <Nav.Link href="https://richmonkeyisland.com#roadmap">Roadmap</Nav.Link>
-               <Nav.Link href="https://richmonkeyisland.com#discord">United are us</Nav.Link>
-               <Nav.Link href="https://richmonkeyisland.com#team">Team</Nav.Link>
+               <Nav.Link href="#roadmap">Roadmap</Nav.Link>
+               <Nav.Link href="#discord">United are us</Nav.Link>
+               <Nav.Link href="#team">Team</Nav.Link>
                <Nav.Link href="#">Provenance (soon)</Nav.Link>
                <Nav.Link href="#">Members Only (soon)</Nav.Link>
               {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
@@ -91,7 +91,8 @@ export const Navigation: FC = () => {
        </Container>
      </Navbar>
      <Container fluid>
-       <div id="home"></div>
+       <div id="home" data-spy="home"
+        data-target="#home"></div>
 	          	<section className='precious'>
               <div className="cafe">
                 <p></p>
@@ -173,7 +174,8 @@ export const Navigation: FC = () => {
      </Carousel.Item>
    </Carousel>
    <section className="roadmap-style">
-     <div id="ownership">
+     <div id="ownership" data-spy="ownership"
+        data-target="#ownership">
        <h2 className='roadmap-title'>OWNERSHIP</h2>
        <hr></hr>
        <ul className="list-text">
@@ -190,12 +192,13 @@ export const Navigation: FC = () => {
      </div>
    </section>
    <section className="roadmap-style">
-   <a id="history">
+   <div id="history"  data-spy="history"
+        data-target="#history">
   <h2 className='roadmap-title'>STORY</h2>
   <hr></hr>
     <div className="container book-open">
     </div> 
-    </a>
+    </div>
 </section>
 <section className="roadmap-style">
   <div id="discord">
@@ -212,7 +215,8 @@ Join our discord for latest news & get on the whitelist .
   </div>
 </section>
   <section className='roadmap-style'>
-  <div id="roadmap">
+  <div id="roadmap" data-spy="roadmap"
+        data-target="#roadmap">
   <h2 className='roadmap-title'>ROADMAP</h2>
   <hr></hr>
   <Row>
@@ -244,7 +248,8 @@ Join our discord for latest news & get on the whitelist .
   </div>
   </section>
   <section className="team-style">
-    <div id="team">
+    <div id="team" data-spy="team"
+        data-target="#team">
     <h2 className='team-title'>TEAM</h2>
   <hr></hr>
 <div className="row">
