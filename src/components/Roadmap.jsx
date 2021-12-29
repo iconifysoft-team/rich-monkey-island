@@ -6,10 +6,9 @@ import road04 from "../assets/imgs/monkey-04.jpeg";
 const Roadmap = () => {
   return (
     <>
-      <section className="roadmap-style">
+      <section className="custom-container roadmap-style">
         <div id="roadmap" data-spy="roadmap" data-target="#roadmap">
           <h2 className="roadmap-title">ROADMAP</h2>
-          <hr></hr>
           <Row>
             <Col>
               <ul className="timeline">
@@ -39,10 +38,10 @@ const Roadmap = () => {
               </ul>
             </Col>
             <Col>
-              <img src={road04} alt="road04" className="roadmap-image" />
-              <img src={road03} alt="road03" className="roadmap-image" />
-              <img src={road02} alt="road02" className="roadmap-image" />
-              <img src={road01} alt="road01" className="roadmap-image" />
+              <img className="img-fluid" src={road04} alt="road04" />
+              <img className="img-fluid" src={road03} alt="road03" />
+              <img className="img-fluid" src={road02} alt="road02" />
+              <img className="img-fluid" src={road01} alt="road01" />
             </Col>
           </Row>
           <h3 className="line line-text">

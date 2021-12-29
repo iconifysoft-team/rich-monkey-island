@@ -6,7 +6,7 @@ import profile05 from "../assets/imgs/profile05.jpeg";
 const Team = () => {
   return (
     <>
-      <section className="team-style">
+      <section className="custom-container">
         <div id="team" data-spy="team" data-target="#team">
           <h2 className="team-title">TEAM</h2>
           <hr></hr>
@@ -139,3 +139,77 @@ const Team = () => {
 };
 
 export default Team;
+
+// // import Swiper core and required modules
+// import SwiperCore, {
+//   Keyboard,
+//   Navigation,
+//   Pagination,
+//   Scrollbar,
+// } from "swiper";
+// // Import Swiper styles
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+// import "swiper/css/scrollbar";
+// // Import Swiper React components
+// import { Swiper, SwiperSlide } from "swiper/react";
+
+// // install Swiper modules
+// SwiperCore.use([Keyboard, Scrollbar, Navigation, Pagination]);
+
+// export default function Team() {
+//   return (
+//     <>
+//       <Swiper
+//         slidesPerView={1}
+//         centeredSlides={false}
+//         slidesPerGroupSkip={1}
+//         grabCursor={true}
+//         keyboard={{
+//           enabled: true,
+//         }}
+//         breakpoints={{
+//           769: {
+//             slidesPerView: 2,
+//             slidesPerGroup: 2,
+//           },
+//         }}
+//         scrollbar={true}
+//         navigation={true}
+//         pagination={{
+//           clickable: true,
+//         }}
+//         className="mySwiper"
+//       >
+//         <SwiperSlide>
+//           <img src="https://cdn.magloft.com/github/swiper/images/page-001.jpg" />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <img src="https://cdn.magloft.com/github/swiper/images/page-002.jpg" />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <img src="https://cdn.magloft.com/github/swiper/images/page-003.jpg" />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <img src="https://cdn.magloft.com/github/swiper/images/page-004.jpg" />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <img src="https://cdn.magloft.com/github/swiper/images/page-005.jpg" />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <img src="https://cdn.magloft.com/github/swiper/images/page-006.jpg" />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <img src="https://cdn.magloft.com/github/swiper/images/page-007.jpg" />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <img src="https://cdn.magloft.com/github/swiper/images/page-008.jpg" />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <img src="https://cdn.magloft.com/github/swiper/images/page-009.jpg" />
+//         </SwiperSlide>
+//       </Swiper>
+//     </>
+//   );
+// }

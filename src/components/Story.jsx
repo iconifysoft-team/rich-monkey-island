@@ -1,20 +1,22 @@
+import book from "../assets/imgs/book.png";
+
 const Story = () => {
   return (
     <>
-      <div id="history" data-spy="history" data-target="#history">
-        <h2 className="roadmap-title">STORY</h2>
-        <hr></hr>
-        <div className="book-open"></div>
+      <div className="roadmap">
+        <div className="custom-container h-100 py-5">
+          <h2 className="roadmap-title">STORY</h2>
+          <img src={book} alt="" />
+        </div>
       </div>
-      <div id="discord">
+      <div className="custom-container py-5">
         <h2 className="roadmap-title">UNITED ARE US</h2>
-        <hr></hr>
         <div className="text-center">
           We are stronger when we are united! Join now and reserve your seat for
           a solid project!
           <br></br>
           <a href="https://discord.gg/DxQSMfm6F3">
-            Join our discord for latest news & get on the whitelist .
+            Join our discord for latest news & get on the whitelist.
           </a>
         </div>
       </div>

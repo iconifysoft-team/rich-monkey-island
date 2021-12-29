@@ -5,10 +5,10 @@ import monkey07 from "../assets/imgs/monkey07.jpeg";
 import monkey08 from "../assets/imgs/monkey08.jpeg";
 import monkey10 from "../assets/imgs/monkey10.jpeg";
 
-const Slider = () => {
+const Slider = (props) => {
   return (
     <>
-      <Carousel fade>
+      <Carousel {...props} fade>
         <Carousel.Item>
           <img className="d-block w-100" src={monkey05} alt="First slide" />
           <Carousel.Caption></Carousel.Caption>
