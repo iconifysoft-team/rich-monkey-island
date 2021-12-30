@@ -3,17 +3,21 @@ import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
 
 const Footer = () => (
-  <div className="container-fluid">
-    <hr />
-    <h2 className="text-center">GET ON THE LIST</h2>
+  <div className="container-fluid" style={{ paddingTop: "100px" }}>
+    <h2 className="text-center mb-4">GET ON THE LIST</h2>
 
-    <InputGroup className="footer-row w-50 mx-auto">
+    <InputGroup className="footer-row w-25 mx-auto">
       <FormControl
         placeholder="Email Address"
         aria-label="Email"
         aria-describedby="basic-addon2"
+        className="message-input"
       />
-      <Button variant="outline-secondary" id="button-addon2">
+      <Button
+        className="message-btn"
+        variant="outline-secondary"
+        id="button-addon2"
+      >
         Send
       </Button>
     </InputGroup>

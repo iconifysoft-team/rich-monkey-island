@@ -3,16 +3,25 @@ import Slider from "./Slider";
 const Banner = () => {
   return (
     <>
-      <div className="banner_img">
+      <div className="banner_img" id="home">
         <section className="custom-container banner-wrapper py-5 mb-5">
           <div className="row ">
             <div className="col-12 col-md-6">
               <div className="d-flex flex-column  justify-content-center h-100">
                 <p
-                  className="fs-1 mb-5"
-                  style={{ fontFamily: "Streetwear", margin: 0 }}
+                  style={{ textAlign: "left", marginBottom: "6px" }}
+                  className="roadmap-title"
                 >
-                  Welcome To <br /> The Rich Monkey Island &nbsp;
+                  Welcome To The
+                </p>
+                <p
+                  className="fs-1 mb-5"
+                  style={{
+                    fontFamily: "Streetwear",
+                    margin: 0,
+                  }}
+                >
+                  <span style={{ color: "#fac962" }}>Rich Monkey Island</span>
                 </p>
 
                 <p

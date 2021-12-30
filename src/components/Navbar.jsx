@@ -30,14 +30,15 @@ const NewNavbar = () => {
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
             placement="end"
+            className="aside-bar"
           >
-            <Offcanvas.Header className="bg-dark" closeButton>
+            <Offcanvas.Header closeButton>
               <Offcanvas.Title
                 id="offcanvasNavbarLabel"
                 className="text-center"
               ></Offcanvas.Title>
             </Offcanvas.Header>
-            <Offcanvas.Body className="bg-dark">
+            <Offcanvas.Body>
               <Nav className="text-center mt-4 mb-4 items-menu">
                 <Nav.Link href="#home">Home</Nav.Link>
                 <Nav.Link href="#roadmap">Buy Rich Monkey</Nav.Link>

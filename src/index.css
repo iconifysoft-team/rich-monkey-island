@@ -150,12 +150,11 @@ body {
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #e42143;
   display: none;
 }
 
 .swiper-pagination-bullet-active {
-  background: #e42143;
+  background: #fac962;
 }
 
 .social-links {
@@ -209,7 +208,103 @@ body {
   padding: 10px !important;
 }
 
+.navbar-light .navbar-toggler {
+  background: #ffffff8c;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.aside-bar {
+  background: rgba(25, 13, 40, 0.9);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.nav-link:hover {
+  color: #fac962;
+}
+
+.are-us {
+  background: rgb(161 154 164 / 17%);
+  backdrop-filter: blur(17px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 20px;
+}
+
+.circle::after {
+  content: '';
+  width: 160px;
+  height: 160px;
+  background-color: #fac962;
+  filter: blur(130px);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  z-index: -1;
+}
+
+.circle::before {
+  content: '';
+  width: 100px;
+  height: 100px;
+  background-color: #b62084;
+  filter: blur(110px);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  z-index: -1;
+}
+
+.message-input {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ced4da6b;
+}
+
+.message-btn {
+  color: #ddd;
+}
+
+.message-btn:hover {
+  color: #000000;
+  background-color: #fac962;
+}
+
+.message-input::placeholder {
+  color: #ddd;
+}
+
+
+#roadmap {
+  padding-right: var(--bs-gutter-x, .75rem) !important;
+  padding-left: var(--bs-gutter-x, .75rem) !important;
+}
+
+.footer-row.w-25.mx-auto {
+  width: 100% !important;
+  max-width: 360px;
+}
+
+@media (max-width: 996px) {
+  .mb-5.w-50.text-center {
+    width: 100% !important;
+  }
+}
+
 @media (max-width: 768px) {
+
   .banner-wrapper {
     min-height: 1200px;
   }

@@ -52,7 +52,11 @@ const Team = () => {
   ];
   return (
     <>
-      <section className="custom-container py-5">
+      <section
+        id="team"
+        className="custom-container"
+        style={{ padding: "100px 0" }}
+      >
         <h2 className="roadmap-title">TEAM</h2>
         <Swiper
           slidesPerView={1}
