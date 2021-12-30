@@ -47,7 +47,7 @@ const Team = () => {
       img: profile05,
       heading: "COPY RIGHTS",
       name: "R.KARMA",
-      desc: "copyright registration for the artwork, IPR issues,legal documents, disclaimer, terms of use.",
+      desc: "Copyright registration for the artwork, IPR issues,legal documents, disclaimer, terms of use.",
     },
   ];
   return (
