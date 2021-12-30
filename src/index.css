@@ -104,6 +104,48 @@ body {
   width: auto;
 }
 
+.profile-item {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 10px;
+  padding: 16px;
+  border-radius: 12px;
+  height: 289px;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.caption {
+  margin-left: 15px;
+}
+
+.caption h5 {
+  font-size: 20px;
+}
+
+.caption h4 {
+  font-size: 24px;
+}
+
+.profile-item p {
+  font-size: 18px;
+  color: #ddd;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 14px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 14px));
+}
+
 @media (max-width: 768px) {
   .banner-wrapper {
     min-height: 1200px;
