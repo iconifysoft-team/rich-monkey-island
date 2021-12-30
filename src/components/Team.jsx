@@ -8,8 +8,8 @@ const Team = () => {
     <>
       <section className="custom-container">
         <div id="team" data-spy="team" data-target="#team">
-          <h2 className="team-title">TEAM</h2>
           <hr></hr>
+          <h2 className="team-title text-center mb-4">Team Member</h2>
           <div className="row">
             <div className="col">
               <div className="profile-card">
