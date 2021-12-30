@@ -86,9 +86,11 @@ const Team = () => {
                   <div className="profile">
                     <img src={member.img} alt="Profile img" />
                   </div>
-                  <div className="caption">
-                    <h5>{member.heading}</h5>
-                    <h4>{member.name}</h4>
+                  <div className="caption ">
+                    <div>
+                      <h5>{member.heading}</h5>
+                      <h4>{member.name}</h4>
+                    </div>
                     <div className="social-links">
                       <a href="https://twitter.com/richmonkeisland">
                         <i>
@@ -108,7 +110,9 @@ const Team = () => {
                     </div>
                   </div>
                 </div>
-                <p>{member.desc}</p>
+                <div>
+                  <p>{member.desc}</p>
+                </div>
               </div>
             </SwiperSlide>
           ))}

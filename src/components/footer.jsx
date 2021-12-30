@@ -1,11 +1,13 @@
 import { Button, FormControl, InputGroup } from "react-bootstrap";
-import { BsDiscord, BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsInstagram, BsTwitter } from "react-icons/bs";
+import { FaDiscord } from "react-icons/fa";
 
 const Footer = () => (
-  <div className="footer">
-    <h2>GET ON THE LIST</h2>
+  <div className="container-fluid">
+    <hr />
+    <h2 className="text-center">GET ON THE LIST</h2>
 
-    <InputGroup className="mb-3 footer-row">
+    <InputGroup className="footer-row w-50 mx-auto">
       <FormControl
         placeholder="Email Address"
         aria-label="Email"
@@ -15,27 +17,29 @@ const Footer = () => (
         Send
       </Button>
     </InputGroup>
-    <p>
+    <p className="text-center">
       <a href="https://twitter.com/richmonkeisland">
-        <i>
+        <i className="text-white fs-2 mx-2">
           <BsTwitter />
         </i>
       </a>
       &nbsp;
       <a href="https://discord.gg/DxQSMfm6F3">
-        <i>
-          <BsDiscord />
+        <i className="text-white fs-2 mx-2">
+          <FaDiscord />
         </i>
       </a>{" "}
       &nbsp;
       <a href="https://www.instagram.com/richmonkeyisland/">
-        <i>
+        <i className="text-white fs-3 mx-2">
           <BsInstagram />
         </i>
       </a>
     </p>
 
-    <div className="text-center">COPY &copy;2021 all rights reserved.</div>
+    <div className="text-center mb-3">
+      Copyright &copy;2021 all rights reserved.
+    </div>
   </div>
 );
 

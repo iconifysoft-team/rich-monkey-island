@@ -17,7 +17,7 @@ const Banner = () => {
 
                 <p
                   style={{
-                    textAlign: "justify",
+                    // textAlign: "justify",
                     fontSize: "20px",
                     color: "#e1e1e1",
                   }}
@@ -28,6 +28,14 @@ const Banner = () => {
                   mints of the potions and also an access to members-only
                   benefits that will be revealed with roadmap activation.
                   <br></br>
+                </p>
+                <p
+                  style={{
+                    // textAlign: "justify",
+                    fontSize: "20px",
+                    color: "#e1e1e1",
+                  }}
+                >
                   <b>NFT SALE</b> Plan will be announced early January/ 2022.
                   Minting a Rich Monkey <b>NFT</b> will cost <b>0.65 SOL</b>.
                   The whole process will be even and the lucky ones will get the
