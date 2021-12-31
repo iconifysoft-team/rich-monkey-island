@@ -48,7 +48,7 @@ const NewNavbar = () => {
               ></Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              <Nav className="text-center mt-4 mb-4 items-menu">
+              <Nav id="navItem" className="text-center mt-4 mb-4 items-menu">
                 <Nav.Link href="#home">Home</Nav.Link>
                 <Nav.Link href="#roadmap">Buy Rich Monkey</Nav.Link>
                 <Nav.Link href="#">Rarity (soon)</Nav.Link>

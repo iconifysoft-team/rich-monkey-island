@@ -7,6 +7,13 @@
 body {
   background-color: #190d28;
   color: #fff;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+#root {
+  overflow: hidden;
+  /* overflow-y: auto; */
 }
 
 .custom-container {
@@ -274,9 +281,17 @@ body {
   border: 0.5px solid tomato;
 }
 
+.btn-close {
+  background-color: #fac962;
+}
+
 @media (max-width: 996px) {
   .mb-5.w-50.text-center {
     width: 100% !important;
+  }
+
+  .col-md-auto {
+    width: auto;
   }
 }
 
@@ -330,4 +345,8 @@ body {
   .profile-item {
     height: 460px;
   }
+
+  /* .wallet-btn {
+    display: none;
+  } */
 }
