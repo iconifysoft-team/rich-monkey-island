@@ -1,4 +1,8 @@
 import { useWallet } from "@solana/wallet-adapter-react";
+import {
+  WalletDisconnectButton,
+  WalletMultiButton,
+} from "@solana/wallet-adapter-react-ui";
 import React from "react";
 import { Col, Image, Nav, Offcanvas, Row } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
@@ -14,10 +18,10 @@ const NewNavbar = () => {
             <Image src={logo} width="48" height="54" />
           </Navbar.Brand>
           <Row>
-            {/* <Col md="auto">
+            <Col md="auto">
               <WalletMultiButton className="wallet-btn" />
               {wallet && <WalletDisconnectButton />}
-            </Col> */}
+            </Col>
             <Col md="auto">
               <div className="vr" />
               <Navbar.Toggle

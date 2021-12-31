@@ -33,43 +33,6 @@ body {
   src: url('./assets/fonts/robus-font/Robus-BWqOd.otf');
 }
 
-/* @font-face {
-  font-family: 'techmono';
-  src: url('./assets/fonts/ShareTechMono-Regular.ttf');
-}
-
-
-@font-face {
-  font-family: 'moslymono';
-  src: url('./assets/fonts/MostlyMono.ttf');
-}
-
-@font-face {
-  font-family: 'backblack';
-  src: url('./assets/fonts/Back\ to\ Black\ Bold\ Demo.ttf');
-}
-
-@font-face {
-  font-family: 'arabella';
-  src: url('./assets/fonts/Arabella.ttf');
-}
-
-@font-face {
-  font-family: 'greatvives';
-  src: url('./assets/fonts/GreatVibes-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'precious';
-  src: url('./assets/fonts/Precious.ttf');
-}
-
-@font-face {
-  font-family: 'blackine';
-  src: url('./assets/fonts/Blackine.otf');
-}*/
-
-
 .w-100 {
   width: 100% !important;
   height: 540px;
@@ -161,7 +124,6 @@ body {
   display: flex;
   column-gap: 20px;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .social-links a {
@@ -304,6 +266,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .book {
+    width: 100% !important;
+    padding: 0 15px !important;
+  }
 
   .banner-wrapper {
     min-height: 1200px;

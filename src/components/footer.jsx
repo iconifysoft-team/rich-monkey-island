@@ -44,6 +44,7 @@ const Footer = () => (
     <div className="text-center mb-3">
       Copyright &copy;2021 all rights reserved.
     </div>
+    <div className="text-center mb-3">Developed by IconifySoft</div>
   </div>
 );
 

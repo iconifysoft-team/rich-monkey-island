@@ -6,7 +6,7 @@ const Story = () => {
       <div className="custom-container" style={{ padding: "100px 0" }}>
         <div className="d-flex align-item-center justify-content-center flex-column">
           <h2 className="roadmap-title">STORY</h2>
-          <img src={book} alt="" />
+          <img className="w-75 mx-auto book" src={book} alt="" />
         </div>
       </div>
       <div
