@@ -7,7 +7,12 @@ const Banner = () => {
         <section className="custom-container banner-wrapper py-5 mb-5">
           <div className="row ">
             <div className="col-12 col-md-6">
-              <div className="d-flex flex-column  justify-content-center h-100">
+              <div
+                className="d-flex flex-column  justify-content-center h-100"
+                data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
                 <p
                   style={{ textAlign: "left", marginBottom: "6px" }}
                   className="roadmap-title"
@@ -55,7 +60,12 @@ const Banner = () => {
                 </p>
               </div>
             </div>
-            <div className="col-12 col-md-6">
+            <div
+              className="col-12 col-md-6"
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               <Slider />
             </div>
           </div>

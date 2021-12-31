@@ -1,11 +1,19 @@
 const Ownership = () => {
   return (
     <>
-      <section className="custom-container" style={{ position: "relative" }}>
+      <section
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        className="custom-container"
+        style={{ position: "relative" }}
+      >
         <div className="are-us" style={{ padding: "100px 0" }}>
           <div data-spy="row">
             <div className="col px-md-5 pe-2">
-              <h2 className="roadmap-title">OWNERSHIP</h2>
+              <h2 className="roadmap-title" style={{ color: "#FAC962" }}>
+                OWNERSHIP
+              </h2>
               <ul className="list-text">
                 <li className="event" data-date="1">
                   <p className="fs-5">

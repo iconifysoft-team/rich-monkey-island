@@ -53,11 +53,16 @@ const Team = () => {
   return (
     <>
       <section
+        data-aos="zoom-out"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
         id="team"
         className="custom-container"
         style={{ padding: "100px 0" }}
       >
-        <h2 className="roadmap-title">TEAM</h2>
+        <h2 className="roadmap-title" style={{ color: "#FAC962" }}>
+          TEAM
+        </h2>
         <Swiper
           slidesPerView={1}
           centeredSlides={false}

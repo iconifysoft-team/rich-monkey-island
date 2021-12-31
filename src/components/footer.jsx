@@ -3,8 +3,16 @@ import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
 
 const Footer = () => (
-  <div className="container-fluid" style={{ paddingTop: "100px" }}>
-    <h2 className="text-center mb-4">GET ON THE LIST</h2>
+  <div
+    data-aos="fade-up"
+    data-aos-easing="linear"
+    data-aos-duration="1500"
+    className="container-fluid"
+    style={{ paddingTop: "100px" }}
+  >
+    <h2 className="text-center mb-4" style={{ color: "#FAC962" }}>
+      GET ON THE LIST
+    </h2>
 
     <InputGroup className="footer-row w-25 mx-auto">
       <FormControl
