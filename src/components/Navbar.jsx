@@ -11,7 +11,12 @@ import logo from "../assets/imgs/logo.png";
 const NewNavbar = () => {
   const { wallet } = useWallet();
   return (
-    <div style={{ backgroundColor: "#ffd0a61a" }}>
+    <div
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+      style={{ backgroundColor: "#ffd0a61a" }}
+    >
       <div className="custom-container">
         <Navbar expand={false}>
           <Navbar.Brand href="#">

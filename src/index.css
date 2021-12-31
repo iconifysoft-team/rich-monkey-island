@@ -16,21 +16,21 @@ body {
   margin: 0 auto;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
 
 @font-face {
-  font-family: 'Streetwear';
-  src: url('./assets/fonts/Streetwear.otf');
+  font-family: "Streetwear";
+  src: url("./assets/fonts/Streetwear.otf");
 }
 
 @font-face {
-  font-family: 'cartoon';
-  src: url('./assets/fonts/SFCartoonistHand.ttf');
+  font-family: "cartoon";
+  src: url("./assets/fonts/SFCartoonistHand.ttf");
 }
 
 @font-face {
-  font-family: 'robus';
-  src: url('./assets/fonts/robus-font/Robus-BWqOd.otf');
+  font-family: "robus";
+  src: url("./assets/fonts/robus-font/Robus-BWqOd.otf");
 }
 
 .w-100 {
@@ -67,7 +67,6 @@ body {
   min-height: 700px;
   text-align: center;
 }
-
 
 .profile-item {
   background-color: rgba(255, 255, 255, 0.2);
@@ -107,8 +106,10 @@ body {
 }
 
 .swiper-pagination-bullet {
-  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 14px));
-  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 14px));
+  width: var(--swiper-pagination-bullet-width,
+      var(--swiper-pagination-bullet-size, 14px));
+  height: var(--swiper-pagination-bullet-height,
+      var(--swiper-pagination-bullet-size, 14px));
 }
 
 .swiper-button-next,
@@ -151,11 +152,16 @@ body {
   letter-spacing: 2px;
   font-style: italic;
   font-size: 40px;
-
 }
 
-.card {
+#card {
   background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+#card:hover {
+  transform: translateY(-12px);
+
+  cursor: pointer;
 }
 
 .card-body {
@@ -182,7 +188,6 @@ body {
   -webkit-backdrop-filter: blur(4px);
 }
 
-
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
@@ -205,7 +210,7 @@ body {
 }
 
 .circle::after {
-  content: '';
+  content: "";
   width: 160px;
   height: 160px;
   background-color: #fac962;
@@ -218,7 +223,7 @@ body {
 }
 
 .circle::before {
-  content: '';
+  content: "";
   width: 100px;
   height: 100px;
   background-color: #b62084;
@@ -248,15 +253,25 @@ body {
   color: #ddd;
 }
 
-
 #roadmap {
-  padding-right: var(--bs-gutter-x, .75rem) !important;
-  padding-left: var(--bs-gutter-x, .75rem) !important;
+  padding-right: var(--bs-gutter-x, 0.75rem) !important;
+  padding-left: var(--bs-gutter-x, 0.75rem) !important;
 }
 
 .footer-row.w-25.mx-auto {
   width: 100% !important;
   max-width: 360px;
+}
+
+.wallet-btn {
+  font-family: "cartoon" !important;
+  font-size: 22px;
+  background-color: #e79c10;
+  height: 35px;
+  text-align: center;
+  text-justify: auto;
+  margin-top: 3px;
+  border: 0.5px solid tomato;
 }
 
 @media (max-width: 996px) {

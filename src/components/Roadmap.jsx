@@ -12,14 +12,28 @@ const Roadmap = () => {
         style={{ padding: "100px 0" }}
       >
         <div>
-          <h2 className="roadmap-title mb-3">ROADMAP</h2>
-          <h3 className="line line-text text-center mx-auto mb-5 w-50 text-center">
-            Following the activation of the Road Map, a new roadmap for the
-            Magical Island will begin.
-          </h3>
+          <div
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <h2 style={{ color: "#FAC962" }} className="roadmap-title mb-3">
+              ROADMAP
+            </h2>
+            <h3 className="line line-text text-center mx-auto mb-5 w-50 text-center">
+              Following the activation of the Road Map, a new roadmap for the
+              Magical Island will begin.
+            </h3>
+          </div>
           <Row>
             <Col className="col col-12 col-md-6 col-lg-3">
-              <div className="card my-3">
+              <div
+                data-aos="zoom-in-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="card my-3"
+                id="card"
+              >
                 <img src={road04} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <p className="card-text text-white fw-bold">
@@ -29,7 +43,13 @@ const Roadmap = () => {
               </div>
             </Col>
             <Col className="col col-12 col-md-6 col-lg-3">
-              <div className="card my-3">
+              <div
+                data-aos="zoom-in-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="card my-3"
+                id="card"
+              >
                 <img src={road03} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <p className="card-text text-white fw-bold">
@@ -40,7 +60,13 @@ const Roadmap = () => {
               </div>
             </Col>
             <Col className="col col-12 col-md-6 col-lg-3">
-              <div className="card my-3">
+              <div
+                data-aos="zoom-in-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="card my-3"
+                id="card"
+              >
                 <img src={road02} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <p className="card-text text-white fw-bold">
@@ -51,7 +77,13 @@ const Roadmap = () => {
               </div>
             </Col>
             <Col className="col col-12 col-md-6 col-lg-3">
-              <div className="card my-3">
+              <div
+                data-aos="zoom-in-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="card my-3"
+                id="card"
+              >
                 <img src={road01} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <p className="card-text text-white fw-bold">
