@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <>
       <div className="banner_img" id="home">
-        <section className="custom-container banner-wrapper py-5 mb-5">
+        <section className="custom-container banner-wrapper mb-5">
           <div className="row ">
             <div className="col-12 col-md-6">
               <div
@@ -20,7 +20,7 @@ const Banner = () => {
                   Welcome To The
                 </p>
                 <p
-                  className="fs-1 mb-5"
+                  className="fs-1 mb-4"
                   style={{
                     fontFamily: "Streetwear",
                     margin: 0,
@@ -33,10 +33,12 @@ const Banner = () => {
                   style={{
                     // textAlign: "justify",
                     fontSize: "20px",
-                    color: "#e1e1e1",
+                    color: "#fff",
+                    padding: "5px",
                   }}
                 >
-                  <b>RMI NFTs</b> is a collection of Unique 7,500 <b>NFTs</b>
+                  <b>RMI NFTs</b> is a collection of Unique <b>5252</b>{" "}
+                  <b>NFTs</b>
                   living forever on the solana network. Your NFT will not be
                   only a great piece of art but also utility for the future free
                   mints of the potions and also an access to members-only
@@ -47,7 +49,8 @@ const Banner = () => {
                   style={{
                     // textAlign: "justify",
                     fontSize: "20px",
-                    color: "#e1e1e1",
+                    color: "#fff",
+                    padding: "5px",
                   }}
                 >
                   <b>NFT SALE</b> Plan will be announced early January/ 2022.

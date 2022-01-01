@@ -8,8 +8,8 @@ const Roadmap = () => {
     <>
       <section
         className="custom-container"
-        id="roadmap"
-        style={{ padding: "100px 0" }}
+        id="roadMap"
+        style={{ padding: "100px 15px" }}
       >
         <div>
           <div
@@ -37,7 +37,7 @@ const Roadmap = () => {
                 <img src={road04} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <p className="card-text text-white fw-bold">
-                    Minting 7.5k Rich Monkey NFTs in the public sale 0.65 SOL.
+                    Minting 5252 Rich Monkey NFTs in the public sale 0.65 SOL.
                   </p>
                 </div>
               </div>
@@ -70,7 +70,7 @@ const Roadmap = () => {
                 <img src={road02} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <p className="card-text text-white fw-bold">
-                    Minting 7.5k Rich Monkey Wife NFTs by using the voodoo
+                    Minting 5252 Rich Monkey Wife NFTs by using the voodoo
                     potion NFTs.
                   </p>
                 </div>

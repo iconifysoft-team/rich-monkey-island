@@ -3,83 +3,145 @@ import {
   WalletDisconnectButton,
   WalletMultiButton,
 } from "@solana/wallet-adapter-react-ui";
-import React from "react";
-import { Col, Image, Nav, Offcanvas, Row } from "react-bootstrap";
-import Navbar from "react-bootstrap/Navbar";
+import { useState } from "react";
+import { Link } from "react-scroll";
 import logo from "../assets/imgs/logo.png";
 
 const NewNavbar = () => {
+  const [humbergerActive, setHumbergerActive] = useState(false);
+
+  const handleActive = () => {
+    setHumbergerActive(!humbergerActive);
+  };
   const { wallet } = useWallet();
   return (
-    <div
-      data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1500"
-      style={{ backgroundColor: "#ffd0a61a" }}
-    >
-      <div className="custom-container">
-        <Navbar expand={false}>
-          <Navbar.Brand href="#">
-            <Image src={logo} width="48" height="54" />
-          </Navbar.Brand>
-          <Row>
-            <Col md="auto">
+    <>
+      <div className="nav_wrapper">
+        <div className="custom-container">
+          <div className="custom_navbar">
+            <div className="logo">
+              <img src={logo} alt="" />
+            </div>
+            <div className="">
               <WalletMultiButton className="wallet-btn" />
               {wallet && <WalletDisconnectButton />}
-            </Col>
-            <Col md="auto">
-              <div className="vr" />
-              <Navbar.Toggle
-                aria-controls="offcanvasNavbar"
-                className="toggle-btn"
-              />
-            </Col>
-          </Row>
-          <Navbar.Offcanvas
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-            placement="end"
-            className="aside-bar"
-          >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title
-                id="offcanvasNavbarLabel"
-                className="text-center"
-              ></Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav id="navItem" className="text-center mt-4 mb-4 items-menu">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#roadmap">Buy Rich Monkey</Nav.Link>
-                <Nav.Link href="#">Rarity (soon)</Nav.Link>
-                <Nav.Link href="#roadmap">Roadmap</Nav.Link>
-                <Nav.Link href="#discord">United are us</Nav.Link>
-                <Nav.Link href="#team">Team</Nav.Link>
-                <Nav.Link href="#">Provenance (soon)</Nav.Link>
-                <Nav.Link href="#">Members Only (soon)</Nav.Link>
-                {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
-                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                 <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-                 <NavDropdown.Divider />
-                 <NavDropdown.Item href="#action5">
-                   Something else here
-                 </NavDropdown.Item>
-    </NavDropdown>*/}
-              </Nav>
-              {/* <Form className="d-flex">
-               <FormControl
-                 type="search"
-                 placeholder="Search"
-                 className="me-2"
-                 aria-label="Search"
-/>
-               <Button variant="outline-success">Search</Button>
-             </Form>*/}
-            </Offcanvas.Body>
-          </Navbar.Offcanvas>
-        </Navbar>
+              <div className="btn btn-secondary" onClick={handleActive}>
+                <i className="fas fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+      <aside
+        onClick={handleActive}
+        id="navbar"
+        className={humbergerActive ? "active" : ""}
+      >
+        <div onClick={(e) => e.stopPropagation()} className="navbar_wrapper">
+          <div onClick={handleActive} className="btn btn-warning">
+            <i className="fas fa-times"></i>
+          </div>
+          <nav>
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={50}
+              onClick={handleActive}
+              className="menuBar"
+            >
+              Home
+            </Link>
+            <Link
+              activeClass="active"
+              to="buyRichMonkey"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={50}
+              onClick={handleActive}
+              className="menuBar"
+            >
+              Buy Rich Monkey
+            </Link>
+            <Link
+              activeClass="active"
+              to="rarity"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={50}
+              onClick={handleActive}
+              className="menuBar"
+            >
+              Rarity (Soon)
+            </Link>
+            <Link
+              activeClass="active"
+              to="roadMap"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={50}
+              onClick={handleActive}
+              className="menuBar"
+            >
+              Roadmap
+            </Link>
+            <Link
+              activeClass="active"
+              to="unitedWeAre"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={50}
+              onClick={handleActive}
+              className="menuBar"
+            >
+              United We Are
+            </Link>
+            <Link
+              activeClass="active"
+              to="team"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={50}
+              onClick={handleActive}
+              className="menuBar"
+            >
+              team
+            </Link>
+            <Link
+              activeClass="active"
+              to="provenance"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={50}
+              onClick={handleActive}
+              className="menuBar"
+            >
+              Provenance (Soon)
+            </Link>
+            <Link
+              activeClass="active"
+              to="members"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={50}
+              onClick={handleActive}
+              className="menuBar"
+            >
+              Members Only (Soon)
+            </Link>
+          </nav>
+        </div>
+      </aside>
+    </>
   );
 };
 

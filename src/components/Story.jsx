@@ -18,7 +18,7 @@ const Story = () => {
         </div>
       </div>
       <div
-        id="discord"
+        id="unitedWeAre"
         className="custom-container"
         style={{ position: "relative" }}
       >
@@ -30,7 +30,7 @@ const Story = () => {
           style={{ padding: "100px 0" }}
         >
           <h2 className="roadmap-title" style={{ color: "#FAC962" }}>
-            UNITED ARE US
+            UNITED WE ARE
           </h2>
           <div className="text-center fs-5">
             We are stronger when we are united! Join now and reserve your seat
